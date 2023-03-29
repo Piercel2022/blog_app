@@ -2,7 +2,7 @@
 <!-- PROJECT DESCRIPTION -->
 
 # 📖  <a name="about-project">blog app</a>
-In this project I add forms in the Blog app.
+The project dealt with the data model of the Blog application.
 
 **blog app** is a blog application
 
@@ -84,7 +84,8 @@ To run the project, execute the following command:
 - LinkedIn: (https://linkedin.com/in/pierrecelestinmax)
 
 ## 🔭 Future Features <a name="future-features"></a>
-- [ ] **Add devise**
+- [ ] **Rrocessing data in the models**
+- [ ] **Validations and models specifications**
 
 <!-- CONTRIBUTING -->
 
