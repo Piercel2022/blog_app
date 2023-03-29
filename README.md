@@ -28,7 +28,7 @@ The project dealt with the data model of the Blog application.
 <!-- Features -->
 
 ### Key Feature <a name="key-features"></a>
-- **Data Model:  - The Model of the MVC added in the blog application **
+- Processing data in models
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -84,7 +84,6 @@ To run the project, execute the following command:
 - LinkedIn: (https://linkedin.com/in/pierrecelestinmax)
 
 ## 🔭 Future Features <a name="future-features"></a>
-- [ ] **Rrocessing data in the models**
 - [ ] **Validations and models specifications**
 
 <!-- CONTRIBUTING -->
