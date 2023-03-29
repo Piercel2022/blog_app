@@ -49,7 +49,6 @@ In order to run this project you need to run the following command to install th
 
 ```sh
  gem install rails
- rvm use 'your_ruby-version'
 ```
 
 ### Setup
@@ -63,7 +62,7 @@ Clone this repository to your desired folder:
 ### Install
 Install this project with:
 ```sh
-  rbenv install 3.1.2
+  rvm use 'your_ruby-version'
   bundle install
 ```
 
