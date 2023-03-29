@@ -2,7 +2,7 @@
 <!-- PROJECT DESCRIPTION -->
 
 # 📖  <a name="about-project">blog app</a>
-The project dealt with the data model of the Blog application.
+The project dealt with processing the  data in the model of the Blog application.
 
 **blog app** is a blog application
 
