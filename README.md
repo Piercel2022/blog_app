@@ -6,7 +6,7 @@ The project dealt with the data model of the Blog application.
 
 **blog app** is a blog application
 
-## 🛠 Built With <a name="built-with">Rbenv, RubyGems, Node Package Manager, Rubocup and Stylelint</a>
+## 🛠 Built With <a name="built-with">Rvm, RubyGems, Node Package Manager, Rubocup and Stylelint</a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -49,6 +49,7 @@ In order to run this project you need to run the following command to install th
 
 ```sh
  gem install rails
+ rvm use 'your_ruby-version'
 ```
 
 ### Setup
