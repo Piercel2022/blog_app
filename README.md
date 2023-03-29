@@ -28,7 +28,7 @@ In this project I add forms in the Blog app.
 <!-- Features -->
 
 ### Key Feature <a name="key-features"></a>
-- **Forms:  - Forms added in the blog application **
+- **Data Model:  - The Model of the MVC added in the blog application **
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
