@@ -88,7 +88,9 @@ To run the tests, execute the following command:
 - LinkedIn: (https://linkedin.com/in/pierrecelestinmax)
 
 ## 🔭 Future Features <a name="future-features"></a>
-- [ ] **Validations and models specifications**
+- [ ] **Views**
+- [ ] **Forms**
+- [ ] **Integration specs for Views and fixing n+1 problems.**
 
 <!-- CONTRIBUTING -->
 
