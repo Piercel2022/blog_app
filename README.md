@@ -2,7 +2,7 @@
 <!-- PROJECT DESCRIPTION -->
 
 # 📖  <a name="about-project">blog app</a>
-The project dealt with the data model of the Blog application.
+The project dealt with testing validations and models of the Blog application.
 
 **blog app** is a blog application
 
@@ -28,7 +28,7 @@ The project dealt with the data model of the Blog application.
 <!-- Features -->
 
 ### Key Feature <a name="key-features"></a>
-- Processing data in models
+- Testing models and validations
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -49,6 +49,7 @@ In order to run this project you need to run the following command to install th
 
 ```sh
  gem install rails
+ gem rpec-rails
 ```
 
 ### Setup
@@ -63,6 +64,7 @@ Clone this repository to your desired folder:
 Install this project with:
 ```sh
   rvm use 'your_ruby-version'
+  rails generate rspec:install
   bundle install
 ```
 
@@ -70,7 +72,7 @@ Install this project with:
 
 To run the project, execute the following command:
 ```sh
-  rails s
+  rspec spec --format documentation
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
