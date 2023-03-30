@@ -28,8 +28,8 @@ The project test validations and models of the Blog application with the rspec.
 <!-- Features -->
 
 ### Key Feature <a name="key-features"></a>
+- Testing models and validations
 - Testing  models (User and Post)
-- Testing the validations
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -50,6 +50,7 @@ In order to run this project you need to run the following command to install th
 
 ```sh
  gem install rails
+ gem rpec-rails
  rails generate rspec:install
 ```
 
@@ -65,6 +66,7 @@ Clone this repository to your desired folder:
 Install this project with:
 ```sh
   rvm use 'your_ruby-version'
+  rails generate rspec:install
   bundle install
 ```
 
@@ -86,7 +88,9 @@ To run the tests, execute the following command:
 - LinkedIn: (https://linkedin.com/in/pierrecelestinmax)
 
 ## 🔭 Future Features <a name="future-features"></a>
-- [ ] **Validations and models specifications**
+- [ ] **Views**
+- [ ] **Forms**
+- [ ] **Integration specs for Views and fixing n+1 problems.**
 
 <!-- CONTRIBUTING -->
 
