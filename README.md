@@ -2,7 +2,7 @@
 <!-- PROJECT DESCRIPTION -->
 
 # 📖  <a name="about-project">blog app</a>
-The project test validations and models of the Blog application with the rspec.
+The project implements the two differents controllers and the correponding actions in the view.
 
 **blog app** is a blog application
 
@@ -28,8 +28,9 @@ The project test validations and models of the Blog application with the rspec.
 <!-- Features -->
 
 ### Key Feature <a name="key-features"></a>
-- Testing models and validations
-- Testing  models (User and Post)
+- Controllers for Users
+- Controllers for Posts
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -50,8 +51,7 @@ In order to run this project you need to run the following command to install th
 
 ```sh
  gem install rails
- gem rpec-rails
- rails generate rspec:install
+ 
 ```
 
 ### Setup
@@ -66,15 +66,15 @@ Clone this repository to your desired folder:
 Install this project with:
 ```sh
   rvm use 'your_ruby-version'
-  rails generate rspec:install
   bundle install
 ```
 
 ### Usage
 
-To run the tests, execute the following command:
+To execute the files of this project, run the following command:
 ```sh
-  rspec spec --format documentation
+  rails g controller UsersController index show
+  rails g controller PostsController index show
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
