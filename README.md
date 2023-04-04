@@ -3,17 +3,16 @@
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
+- [🛠 Built With](#built-with)
+- [Tech Stack](#tech-stack)
+- [Key Features](#key-features)
 - [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
+- [Setup](#setup)
+- [Prerequisites](#prerequisites)
+- [Install](#install)
+- [Usage](#usage)
+- [Run tests](#run-tests)
+- [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -22,12 +21,8 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
-Blog app : The specifications of the controllers use the rails generate controller to built the two controllers used in the application
-<!-- PROJECT DESCRIPTION -->
-
 # 📖  <a name="about-project">blog app</a>
-In this project, I set up tests on the controllers I recently added to the Blog app.
+Blog app : The specifications of the controllers use the rails generate controller to built the two controllers used in the application
 **blog app** is a blog application
 
 ## 🛠 Built With <a name="built-with">Rvm, RubyGems, Node Package Manager, Rubocup and Stylelint</a>
@@ -65,7 +60,7 @@ In this project, I set up tests on the controllers I recently added to the Blog 
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
-In order to have the rubygems in your machine, run the following command  
+In order to have the rubygems in your machine, run the following command
   ```sh
  gem install
 ```
@@ -75,7 +70,6 @@ In order to run this project you need to run the following command to install th
 ```sh
  add rails-rspec to the Gemfile
  bundle install
- 
 ```
 
 ### Setup
@@ -95,7 +89,15 @@ Install this project with:
 
 ### Usage
 
-To execute the tests of this project, run the following command:
+To be able able to do this project, run the following command:
+```sh
+  rails server
+```
+
+### Run tests
+
+To run all the tests of this project, run the following command:
+
 ```sh
   rspec --format documentation
 ```
