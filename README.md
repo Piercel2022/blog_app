@@ -3,17 +3,16 @@
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
+- [🛠 Built With](#built-with)
+- [Tech Stack](#tech-stack)
+- [Key Features](#key-features)
 - [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
+- [Setup](#setup)
+- [Prerequisites](#prerequisites)
+- [Install](#install)
+- [Usage](#usage)
+- [Run tests](#run-tests)
+- [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -22,14 +21,8 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
-Blog app : The controllers use the rails generate controller to built the two controllers used in the application
-<!-- PROJECT DESCRIPTION -->
-
 # 📖  <a name="about-project">blog app</a>
-The project implements the two differents controllers and the correponding actions in the view.
-
-The project implements the two differents controllers and the correponding actions in the view.
+Blog app : The specifications of the controllers use the rails generate controller to built the two controllers used in the application
 **blog app** is a blog application
 
 ## 🛠 Built With <a name="built-with">Rvm, RubyGems, Node Package Manager, Rubocup and Stylelint</a>
@@ -54,8 +47,7 @@ The project implements the two differents controllers and the correponding actio
 <!-- Features -->
 
 ### Key Feature <a name="key-features"></a>
-- Controllers for Users
-- Controllers for Posts
+- Ruby Specifications of the controllers(Users ans Posts)
 
 
 
@@ -68,16 +60,16 @@ The project implements the two differents controllers and the correponding actio
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
-In order to have the rubygems in your machine, run the following command  
+In order to have the rubygems in your machine, run the following command
   ```sh
  gem install
 ```
 
-In order to run this project you need to run the following command to install the rails framework:
+In order to run this project you need to run the following command to install the rails-rspec testing framework:
 
 ```sh
- gem install rails
- 
+ add rails-rspec to the Gemfile
+ bundle install
 ```
 
 ### Setup
@@ -97,10 +89,17 @@ Install this project with:
 
 ### Usage
 
-To execute the files of this project, run the following command:
+To be able able to do this project, run the following command:
 ```sh
-  rails g controller UsersController index show
-  rails g controller PostsController index show
+  rails server
+```
+
+### Run tests
+
+To run all the tests of this project, run the following command:
+
+```sh
+  rspec --format documentation
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
