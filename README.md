@@ -23,13 +23,11 @@
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
-Blog app : The controllers use the rails generate controller to built the two controllers used in the application
+Blog app : The specifications of the controllers use the rails generate controller to built the two controllers used in the application
 <!-- PROJECT DESCRIPTION -->
 
 # 📖  <a name="about-project">blog app</a>
-The project implements the two differents controllers and the correponding actions in the view.
-
-The project implements the two differents controllers and the correponding actions in the view.
+In this project, I set up tests on the controllers I recently added to the Blog app.
 **blog app** is a blog application
 
 ## 🛠 Built With <a name="built-with">Rvm, RubyGems, Node Package Manager, Rubocup and Stylelint</a>
@@ -54,8 +52,7 @@ The project implements the two differents controllers and the correponding actio
 <!-- Features -->
 
 ### Key Feature <a name="key-features"></a>
-- Controllers for Users
-- Controllers for Posts
+- Ruby Specifications of the controllers(Users ans Posts)
 
 
 
@@ -97,10 +94,9 @@ Install this project with:
 
 ### Usage
 
-To execute the files of this project, run the following command:
+To execute the tests of this project, run the following command:
 ```sh
-  rails g controller UsersController index show
-  rails g controller PostsController index show
+  rspec --format documentation
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
