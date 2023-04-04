@@ -70,10 +70,11 @@ In order to have the rubygems in your machine, run the following command
  gem install
 ```
 
-In order to run this project you need to run the following command to install the rails framework:
+In order to run this project you need to run the following command to install the rails-rspec testing framework:
 
 ```sh
- gem install rails
+ add rails-rspec to the Gemfile
+ bundle install
  
 ```
 
