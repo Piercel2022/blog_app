@@ -22,7 +22,7 @@
 - [📝 License](#license)
 
 # 📖  <a name="about-project">blog app</a>
-Blog app : The specifications of the controllers use the rails generate controller to built the two controllers used in the application
+Blog app : This project add the view in our model-view-controller architectural pattern blog application
 **blog app** is a blog application
 
 ## 🛠 Built With <a name="built-with">Rvm, RubyGems, Node Package Manager, Rubocup and Stylelint</a>
@@ -47,7 +47,7 @@ Blog app : The specifications of the controllers use the rails generate controll
 <!-- Features -->
 
 ### Key Feature <a name="key-features"></a>
-- Ruby Specifications of the controllers(Users ans Posts)
+- The view of our model-view-controller application
 
 
 
@@ -68,7 +68,6 @@ In order to have the rubygems in your machine, run the following command
 In order to run this project you need to run the following command to install the rails-rspec testing framework:
 
 ```sh
- add rails-rspec to the Gemfile
  bundle install
 ```
 
@@ -94,13 +93,7 @@ To be able able to do this project, run the following command:
   rails server
 ```
 
-### Run tests
 
-To run all the tests of this project, run the following command:
-
-```sh
-  rspec --format documentation
-```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,7 +106,6 @@ To run all the tests of this project, run the following command:
 - LinkedIn: (https://linkedin.com/in/pierrecelestinmax)
 
 ## 🔭 Future Features <a name="future-features"></a>
-- [ ] **Views**
 - [ ] **Forms**
 - [ ] **Integration specs for Views and fixing n+1 problems.**
 
