@@ -1,2 +1,25 @@
-<h1>Display all the posts of a specific user</h1>
+<div class="user_container">
+        <div class="user_img">
+      <%= image_tag "profile-picture.jpg", size: "200x200" %>
+       </div>
+       <div class="user_data">
+        <h1><%= @user.name %></h1>
+        <p>Number of posts:<%= @user.posts_counter || 0 %></p></div>
+  </div>
+
+<ul class="user-posts">
+<% @posts.each do |post| %>
+    <li class="post_user">Post#<%= post.id %>
+      <p><%= post.text%></p>
+      <p>Comments: <%= post.comments_counter || 0 %> <span>Likes: <%= post.likes_counter || 0%></span></p>
+      <button> <%=link_to  "See Post", "posts/#{post.id}" %> </button>
+    </li>
+  <ul class="username-comments">
+    <% post.most_recent_comments.each do |comment| %>
+      <li><%= @user.name%>: <%= comment.text %></li>
+    <%end%>
+  </ul>
+  </li>
+<%end%>
+</ul>
 
