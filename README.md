@@ -22,10 +22,10 @@
 - [📝 License](#license)
 
 # 📖  <a name="about-project">blog app</a>
-Blog app : This project add the view in our model-view-controller architectural pattern blog application
+Blog app : This project add the forms to the Blog app.
 **blog app** is a blog application
 
-## 🛠 Built With <a name="built-with">Rvm, RubyGems, Node Package Manager, Rubocup and Stylelint</a>
+## 🛠 Built With <a name="built-with">Rvm, RubyGems, Node Package Manager, Rubocup and Stylelint, nvm and yarn</a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -47,7 +47,7 @@ Blog app : This project add the view in our model-view-controller architectural 
 <!-- Features -->
 
 ### Key Feature <a name="key-features"></a>
-- The view of our model-view-controller application
+- The form to enter data in the blog app
 
 
 
@@ -82,7 +82,9 @@ Clone this repository to your desired folder:
 ### Install
 Install this project with:
 ```sh
-  rvm use 'your_ruby-version'
+  rvm use 3.1.2
+  nvm use 14
+  yarn install
   bundle install
 ```
 
@@ -106,7 +108,6 @@ To be able able to do this project, run the following command:
 - LinkedIn: (https://linkedin.com/in/pierrecelestinmax)
 
 ## 🔭 Future Features <a name="future-features"></a>
-- [ ] **Forms**
 - [ ] **Integration specs for Views and fixing n+1 problems.**
 
 <!-- CONTRIBUTING -->

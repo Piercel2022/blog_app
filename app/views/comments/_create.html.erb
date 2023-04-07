@@ -1,0 +1,7 @@
+<div>
+<%= form_with model: @comment, url: user_post_path, class: 'form-group', scope: :form_comment  do |form| %>
+   <%= form.text_area :text, class: 'form-control' %>
+  <div>
+       <%= form.submit 'Add comment' %>
+  </div>
+<% end %> <br/>

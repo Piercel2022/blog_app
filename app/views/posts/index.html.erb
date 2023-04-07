@@ -1,25 +1,10 @@
-<div class="user_container">
-        <div class="user_img">
-      <%= image_tag "profile-picture.jpg", size: "200x200" %>
-       </div>
-       <div class="user_data">
-        <h1><%= @user.name %></h1>
-        <p>Number of posts:<%= @user.posts_counter || 0 %></p></div>
-  </div>
-
-<ul class="user-posts">
-<% @posts.each do |post| %>
-    <li class="post_user">Post#<%= post.id %>
-      <p><%= post.text%></p>
-      <p>Comments: <%= post.comments_counter || 0 %> <span>Likes: <%= post.likes_counter || 0%></span></p>
-      <button> <%=link_to  "See Post", "posts/#{post.id}" %> </button>
-    </li>
-  <ul class="username-comments">
-    <% post.most_recent_comments.each do |comment| %>
-      <li><%= @user.name%>: <%= comment.text %></li>
-    <%end%>
-  </ul>
-  </li>
-<%end%>
+<%= render partial:'partials/user_partial', locals: {user: @user}%>
+<% @user_posts.each do |post| %>
+<%= render partial:'partials/post_partial', locals: {post: post}%>
+<ul>
+<% post.recent_comments.each do |comment|%>
+<li> <%= comment.author.name%>: <%= comment.text%></li>
+<% end %>
 </ul>
-
+<% end %>
+<%= link_to "Add new post", new_user_post_path(@user), class: " see-all-btn" %>

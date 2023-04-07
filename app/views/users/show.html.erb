@@ -1,29 +1,14 @@
-<div class="user_container">
-        <div class="user_img">
-      <%= image_tag "profile-picture.jpg", size: "200x200" %>
-       </div>
-       <div class="user_data">
-        <h1><%= @user.name %></h1>
-        <p>Number of posts:<%= @user.posts_counter || 0 %></p></div>
-  </div>
+<%= render partial: 'partials/user_partial', locals: { user: @user } %>
 
-        <div class="user_bio">
-        <h2>Bio</h2>
-        <p><%= @user.bio %></p>
-        </div>
- <div class="comment_data">
-    <% @user.posts.each do |e| %>
-        <div class="post_container">
-            <h1>Post #<%= e.id %></h1>
-            <p><%= e.text %></p>
-            <span>Comments:<%= e.comments_counter || 0 %></span>
-            <span>Likes:<%= e.likes_counter || 0 %></span>
-            </div>
-       
-    <% end %>
-    </div>
-  <div class="button-wrapper">
-    <button class="button"><%=link_to "See all posts", user_posts_path(@user) %></button>
-  </div>
+<div >
+<p>Bio
+<p>
+<%= @user.bio%>
+</p>
+</p>
 
-
+<% @recent_post.each do |recent| %>
+<%= render partial: 'partials/post_partial', locals: { post: recent}  %>
+<% end %>
+<%= link_to("See all the post", user_posts_path(@user), class: "see-all")  %>
+</div>
