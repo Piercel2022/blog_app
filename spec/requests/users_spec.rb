@@ -15,7 +15,7 @@ RSpec.describe 'UsersController', type: :request do
     end
 
     it 'body should have correct  placeholder text' do
-      expect(response.body).to include('The list of all users')
+      expect(response.body).to include('Display the list of all users')
     end
   end
 

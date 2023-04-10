@@ -3,6 +3,11 @@ class CommentsController < ApplicationController
     @comment = Comment.new
   end
 
+  def show
+    @post = Post.find(params[:id])
+    @comments = @post.comments
+  end
+
   def create
     @comment = Comment.new(comment_params)
     redirect_to user_posts_path(id: @comment.post_id, user_id: @comment.author_id) if @comment.save
