@@ -128,6 +128,7 @@ To be able able to do this project, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 - [ ] **REST Full API with REACT / Redux**
+- [ ] **Add devise**
 
 <!-- CONTRIBUTING -->
 
