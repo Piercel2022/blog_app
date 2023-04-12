@@ -5,7 +5,8 @@ RSpec.describe 'Post Show', type: :request do
   before(:each) do
     User.create(name: 'Mudasir Sherwani', posts_counter: 5, photo: 'https://i.imgur.com/1J3wZQx.jpg',
                 bio: 'I am Mudasir Sherwani the full stack developer')
-    Post.create(title: 'First post by Mudasir Sherwani', text: 'This is my first post', comments_counter: 0, likes_counter: 0, author_id: 1)
+    Post.create(title: 'First post by Mudasir Sherwani', text: 'This is my first post', comments_counter: 0,
+                likes_counter: 0, author_id: 1)
     Like.create(author_id: 1, post_id: 1)
   end
   it 'renders the title of the post' do
