@@ -111,7 +111,7 @@ To be able able to do this project, run the following command:
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors">Pierre</a>
+## 👥 Authors <a name="authors"></a>
 
 👤 **Pierre Celestin Moussa**
 
