@@ -33,4 +33,3 @@ RSpec.describe 'Requesting "/user/5": ', type: :request do
     expect(response.body).to include('User 5 Profile')
   end
 end
-

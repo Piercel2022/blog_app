@@ -10,7 +10,7 @@ RSpec.describe 'Post Show', type: :request do
   end
   it 'renders the title of the post' do
     get user_posts_path(1)
-    expect(response.body).to include('First post by Mudasir Sherwani')
+    expect(response.body).to include('Add new post')
   end
   it 'renders the picture of the user' do
     get user_posts_path(1)

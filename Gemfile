@@ -38,15 +38,17 @@ gem 'rails-controller-testing'
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
 
+gem 'rubocop-capybara', '~> 2.17', '>= 2.17.1'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false
 
+gem 'rubocop-rspec', '~> 2.19'
 # Use Sass to process CSS
 # gem "sassc-rails"
-
+gem 'rubocop-rails', '~> 2.19'
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
