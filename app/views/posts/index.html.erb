@@ -1,3 +1,4 @@
+<p>Display the list of all posts</p>
 <%= render partial:'partials/user_partial', locals: {user: @user}%>
 <% @user_posts.each do |post| %>
 <%= render partial:'partials/post_partial', locals: {post: post}%>
