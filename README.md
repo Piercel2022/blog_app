@@ -22,8 +22,7 @@
 - [📝 License](#license)
 
 # 📖  <a name="about-project">blog app</a>
-Blog app : This project add the forms to the Blog app.
-**blog app** is a blog application
+Blog app : The Blog app is a classic example of a blog website. We have create a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
 
 ## 🛠 Built With <a name="built-with">Rvm, RubyGems, Node Package Manager, Rubocup and Stylelint, nvm and yarn</a>
 
@@ -49,7 +48,18 @@ Blog app : This project add the forms to the Blog app.
 ### Key Feature <a name="key-features"></a>
 - The form to enter data in the blog app
 
-
+-  1: Creating a data model.
+-  2: Validations and Model specs.
+-  3: Processing data in models.
+-  4: Setup and controllers.
+-  5: Controllers specs.
+-  6: Views.
+-  7: Forms.
+-  8: Integration specs for Views and fixing n+1 problems.
+-  9: Add Devise.
+-  10: Add authorization rules.
+-  11: Add API endpoints.
+-  12: API documentation.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -101,14 +111,23 @@ To be able able to do this project, run the following command:
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="authors">Pierre</a>
+## 👥 Authors <a name="authors">Pierre</a>
+
+👤 **Pierre Celestin Moussa**
 
 - GitHub: (https://github.com/Piercel2022)
 - Twitter: (https://twitter.com/pier_celestin)
 - LinkedIn: (https://linkedin.com/in/pierrecelestinmax)
 
+👤 **Mudasir Sherwani**
+
+- GitHub: [@Mudasir Sherwani](https://github.com/MudasirSherwani)
+- Twitter: [@Mudasir Sherwani](https://twitter.com/mudasirsherwani)
+- LinkedIn: [Mudasir Sherwani](https://linkedin.com/in/mudasir-sherwani)
+
+
 ## 🔭 Future Features <a name="future-features"></a>
-- [ ] **Integration specs for Views and fixing n+1 problems.**
+- [ ] **REST Full API with REACT / Redux**
 
 <!-- CONTRIBUTING -->
 
@@ -153,6 +172,6 @@ I would like to thank Microverse especially Codereviewers
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
-
-This project is [MIT](./LICENSE) licensed.
+ 
+This project is [MIT](https://github.com/Piercel2022/blog_app/blob/develop/LICENSE) licensed.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
