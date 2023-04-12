@@ -108,7 +108,7 @@ To be able able to do this project, run the following command:
 - LinkedIn: (https://linkedin.com/in/pierrecelestinmax)
 
 ## 🔭 Future Features <a name="future-features"></a>
-- [ ] **Integration specs for Views and fixing n+1 problems.**
+- [ ] **Add devise**
 
 <!-- CONTRIBUTING -->
 
