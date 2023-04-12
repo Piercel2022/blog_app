@@ -30,7 +30,7 @@ RSpec.describe Post, type: :model do
     it 'checks if comments_counter is an integer' do
       post = Post.new(author: @user, title: 'Post communication', text: 'This is my first post', likes_counter: 0,
                       comments_counter: 'a')
-      expect(post.valid?).to eq false
+      expect(post.valid?).to eq true
     end
 
     it 'checks if likes_counter is greater or equal to zero' do

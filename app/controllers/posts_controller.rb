@@ -1,7 +1,8 @@
 class PostsController < ApplicationController
   def index
+    @posts = [] if @posts.nil?
     @user = User.find(params[:user_id])
-    @user_posts = Post.where(author_id: params[:user_id]).order(created_at: :desc)
+    @user_posts = Post.where(author_id: params[:user_id]).order(created_at: :asc)
   end
 
   def show
