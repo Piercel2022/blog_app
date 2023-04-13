@@ -1,23 +1,25 @@
-<h2>Log in</h2>
+<h2 class="container-fluid d-flex justify-content-center">Log in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
+<div class="form-floating mb-3 mt-3">
+  <div class="container-fluid d-flex justify-content-center my-3">
     <%= f.email_field :email, autofocus: true, autocomplete: "username", placeholder: "Username" %>
   </div>
 
-  <div class="field">
+  <div class="container-fluid d-flex justify-content-center my-3">
     <%= f.password_field :password, autocomplete: "current-password",placeholder: "Password"  %>
   </div>
 
   <% if devise_mapping.rememberable? %>
-    <div class="field-me">
+    <div class="container-fluid d-flex justify-content-center my-0">
       <%= f.check_box :remember_me %>
       <%= f.label :remember_me %>
     </div>
-  <% end %>
+</div>
+<% end %>
 
-  <div class="actions">
-    <%= f.submit "Log in"  %>
+  <div class="container-fluid d-flex justify-content-center mw-100" >
+    <%= f.submit "Log in" %>
   </div>
 <% end %>
 
