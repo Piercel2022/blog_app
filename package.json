@@ -4,5 +4,16 @@
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.7",
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.4",
+    "esbuild": "^0.17.16",
+    "sass": "^1.62.0"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "jest"
   }
 }

@@ -7,8 +7,17 @@ Bio
 <%= @user.bio%>
 </p>
 
-<% @recent_post.each do |recent| %>
-<%= render partial: 'partials/post_partial', locals: { post: recent}  %>
-<% end %>
-<%= link_to("See all posts", user_posts_path(@user), class: "see-all")  %>
-</div>
+   <div>
+    <% @user.posts.each do |e| %>
+        <div class="posts">
+            <h1>Post: <%= e.title %></h1>
+            <p><%= e.text %></p>
+            <div>
+            <span>Comments:<%= e.comments_counter || 0%></span>
+            <span>Likes:<%= e.likes_counter || 0%></span>
+            </div>
+          </div>
+    <% end %>
+    <%= link_to "Add New Post", "/users/#{@user.id}/posts/new", {:class => "see_all_post"}%>
+<button><%=link_to "See all posts", user_posts_path(@user) %></button>
+    </div>

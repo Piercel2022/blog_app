@@ -57,9 +57,7 @@ Blog app : The Blog app is a classic example of a blog website. We have create a
 -  7: Forms.
 -  8: Integration specs for Views and fixing n+1 problems.
 -  9: Add Devise.
--  10: Add authorization rules.
--  11: Add API endpoints.
--  12: API documentation.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -127,8 +125,9 @@ To be able able to do this project, run the following command:
 
 
 ## 🔭 Future Features <a name="future-features"></a>
-- [ ] **REST Full API with REACT / Redux**
-- [ ] **Add devise**
+- [ ] **Add authorization rules**
+- [ ] **Add API endpoints**
+- [ ] **API documentation**
 
 <!-- CONTRIBUTING -->
 
