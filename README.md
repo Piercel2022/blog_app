@@ -113,9 +113,9 @@ To be able able to do this project, run the following command:
 
 👤 **Pierre Celestin Moussa**
 
-- GitHub: (https://github.com/Piercel2022)
-- Twitter: (https://twitter.com/pier_celestin)
-- LinkedIn: (https://linkedin.com/in/pierrecelestinmax)
+- GitHub:[@Piercel2022] (https://github.com/Piercel2022)
+- Twitter:[@pier_celestin] (https://twitter.com/pier_celestin)
+- LinkedIn: [@pierrecelestinmax](https://linkedin.com/in/pierrecelestinmax)
 
 👤 **Mudasir Sherwani**
 
