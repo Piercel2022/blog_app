@@ -2,3 +2,34 @@
   display: flex;
   justify-content: center;
 }
+.avatar{
+  width: 200px;
+  height: 200px;
+}
+.log-button{
+  width: 100%;
+}
+
+.inp {
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+  border: 2px solid #000;
+  padding: 7px;
+  font-size: 12px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 50%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-right: auto;
+  margin-left: auto;
+}
+.login{
+  border: 3px solid blue;
+  width: 90%;
+}
