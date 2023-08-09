@@ -1,11 +1,11 @@
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-<div class="form-floating mb-3 w-100">
-  <div class="container-fluid d-flex justify-content-center my-3 w-75 p-3">
+<div class="container-fluid mb-3 w-80 bg-zinc-700">
+  <div class="container-fluid d-flex justify-content-center m-3 w-75 p-3">
     <%= f.email_field :email, autofocus: true, autocomplete: "username", placeholder: "Username", class: 'inp' %>
   </div>
 
-  <div class="container-fluid d-flex justify-content-center my-3 w-75 p-3">
+  <div class="container-fluid d-flex justify-content-center m-3 w-75 p-3">
     <%= f.password_field :password, autocomplete: "current-password",placeholder: "Password", class: 'inp'  %>
   </div>
 
@@ -17,7 +17,7 @@
 </div>
 <% end %>
 
-  <div class="container d-flex justify-content-center w-60 h-6 border-solid border-3 bg-blue-500 text-white shadow-indigo-500/50">
+  <div class="container d-flex justify-content-center w-80 h-6 border-solid border-3 bg-blue-500 text-white shadow-indigo-500/50">
     <%= f.submit "Log in" %>
   </div>
 <% end %>
