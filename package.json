@@ -20,7 +20,7 @@
   },
   "scripts": {
     "babel-version": "babel --version",
-    "test": "jest",
+    "build": "babel src -d lib",
     "build:css": "tailwindcss --postcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.css"
   }
 }
