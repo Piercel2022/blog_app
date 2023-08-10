@@ -5,7 +5,7 @@
   <div class="m-6 container-fluid d-flex justify-content-center ">
     <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
    </div>
-  <div class="p-3 mt-5 text-white border-4 w-30 bg-indigo-500/100 d-flex justify-content-center">
+  <div class="p-3 mt-5 text-white border-4 bg-indigo-500/100 d-flex justify-content-center">
     <%= f.submit "Resend confirmation instructions" %>
   </div>
 <% end %>
