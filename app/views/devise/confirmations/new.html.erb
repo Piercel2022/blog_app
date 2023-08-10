@@ -1,6 +1,8 @@
-<div class="h-6 mt-5 mb-3 container-fluid w-80 bg-zinc-700">
+
 <%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
+<div class="container h-6 mt-5 mb-3 w-80 bg-zinc-700">
   <%= render "devise/shared/error_messages", resource: resource %>
+
   <div class="m-6 container-fluid d-flex justify-content-center ">
     <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
    </div>
@@ -8,6 +10,5 @@
     <%= f.submit "Resend confirmation instructions" %>
   </div>
 <% end %>
-
+ </div>
 <%= render "devise/shared/links" %>
-</div>
