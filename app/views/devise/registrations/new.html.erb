@@ -1,19 +1,19 @@
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-<div class="container-fluid mb-3 w-80 bg-zinc-700">
-  <div class="container-fluid d-flex justify-content-center m-3 w-75 p-3">
+<div class="mb-3 container-fluid w-80 bg-zinc-700">
+  <div class="p-3 m-3 container-fluid d-flex justify-content-center w-75">
     <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email" %>
   </div>
 
-  <div class="container-fluid d-flex justify-content-center m-3 w-75 p-3">
+  <div class="p-3 m-3 container-fluid d-flex justify-content-center w-75">
     <%= f.password_field :password, autocomplete: "new-password" , placeholder: "Password" %>
   </div>
 
-  <div class="container-fluid d-flex justify-content-center m-3 w-75 p-3">
+  <div class="p-3 m-3 container-fluid d-flex justify-content-center w-75">
     <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Password" %>
   </div>
    </div>
-  <div class="container d-flex justify-content-center w-80 p-3  border-solid border-3 bg-blue-500 text-white shadow-indigo-500/50">
+  <div class="container p-3 text-white bg-blue-500 border-solid d-flex justify-content-center w-80 border-3 shadow-indigo-500/50">
     <%= f.submit "Sign up" %>
   </div>
 
