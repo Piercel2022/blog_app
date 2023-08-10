@@ -1,11 +1,11 @@
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 <div class="mb-3 container-fluid w-80 bg-zinc-700">
-  <div class="p-5 m-3 container-fluid d-flex justify-content-center w-75">
+  <div class="p-3 m-3 container-fluid d-flex justify-content-center w-75">
     <%= f.email_field :email, autofocus: true, autocomplete: "username", placeholder: "Username", class: 'inp' %>
   </div>
 
-  <div class="p-5 m-3 container-fluid d-flex justify-content-center w-75">
+  <div class="p-3 m-3 container-fluid d-flex justify-content-center w-75">
     <%= f.password_field :password, autocomplete: "current-password",placeholder: "Password", class: 'inp'  %>
   </div>
 
