@@ -1,14 +1,15 @@
-<%= stylesheet_link_tag('application') %>
+<div class="flex-row d-flex">
+<%= image_tag('profile-picture.jpg', class:'m-3 w-12 h-12')%>
 
-<section>
-<%= image_tag('profile-picture.jpg', class:'avatar')%>
+<div class="m-4 border-4 w-80 d-flex border-indigo-500/100">
 
 <div>
 
-<h2><%= link_to(user.name, user_path(user))%></h2>
+<h2 class="font-bold"><%= link_to(user.name, user_path(user))%></h2>
 
-<p>
+<div class="ml-16">
 Number of Posts : <%= user.posts_counter%>
-</p>
 </div>
-</section>
+</div>
+</div>
+</div>
