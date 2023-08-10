@@ -1,23 +1,23 @@
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-<div class="container-fluid mb-3 w-80 bg-zinc-700">
-  <div class="container-fluid d-flex justify-content-center m-3 w-75 p-3">
-    <%= f.email_field :email, autofocus: true, autocomplete: "username", placeholder: "Username", class: 'inp' %>
+<div class="mb-3 container-fluid w-80 bg-zinc-700">
+  <div class="p-3 m-4 container-fluid d-flex justify-content-center w-75">
+    <%= f.email_field :email, autofocus: true, autocomplete: "username", placeholder: "Username", class: 'p-2' %>
   </div>
 
-  <div class="container-fluid d-flex justify-content-center m-3 w-75 p-3">
-    <%= f.password_field :password, autocomplete: "current-password",placeholder: "Password", class: 'inp'  %>
+  <div class="p-3 m-4 container-fluid d-flex justify-content-center w-75">
+    <%= f.password_field :password, autocomplete: "current-password",placeholder: "Password", class: 'p-2'  %>
   </div>
 
   <% if devise_mapping.rememberable? %>
-    <div class="container-fluid d-flex justify-content-center my-0 text-white">
+    <div class="my-0 text-white container-fluid d-flex justify-content-center">
       <%= f.check_box :remember_me %>
       <%= f.label :remember_me %>
     </div>
 </div>
 <% end %>
 
-  <div class="container d-flex justify-content-center w-80 h-6 border-solid border-3 bg-blue-500 text-white shadow-indigo-500/50">
+  <div class="container font-bold text-white bg-blue-500 border-solid h-9 d-flex justify-content-center w-80 shadow-indigo-500/50">
     <%= f.submit "Log in" %>
   </div>
 <% end %>
