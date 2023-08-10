@@ -1,6 +1,6 @@
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-<div class="mb-3 container-fluid w-80 bg-zinc-700">
+<div class="flex-col mb-3 d-flex justify-content-center container-fluid w-80 bg-zinc-700">
   <div class="p-3 m-3 container-fluid d-flex justify-content-center w-75">
     <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class: 'p-2'  %>
   </div>
