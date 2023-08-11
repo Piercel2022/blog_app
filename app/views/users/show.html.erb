@@ -1,9 +1,9 @@
 <div class="justify-center font-bold text-white d-flex bg-slate-500">Display a specific user</div>
 <%= render partial: 'partials/user_partial', locals: { user: @user } %>
 
-<div >
+<div class="p-5 m-4 border-4 md:w-80 d-flex border-indigo-500/100">
 Bio
-<div>
+
 <%= @user.bio%>
 </div>
 
@@ -17,7 +17,7 @@ Bio
             <span>Likes:<%= e.likes_counter || 0%></span>
             </div>
           </div>
-    <% end %>
+    <%end %>
     <%= link_to "Add New Post", "/users/#{@user.id}/posts/new", {:class => "see_all_post"}%>
 <button><%=link_to "See all posts", user_posts_path(@user) %></button>
     </div>
