@@ -1,5 +1,7 @@
 <div class="justify-center p-4 text-3xl font-bold text-white d-flex bg-slate-500">Create new post article</div>
+<div class="flex-col justify-center ml-7 d-flex">
 <%= form_for @post, url: user_posts_path do |f| %>
+
   <% if @post.errors.any? %>
     <ul class="errors">
       <% @post.errors.full_messages.each do |message| %>
@@ -10,6 +12,7 @@
     </ul>
   <% end %>
   <%= f.hidden_field :author_id, value: @params ? @params['user_id'] : '' %>
+
   <div>
     <%= f.label :title %><br />
     <%= f.text_field :title, placeholder: 'Article title' %>
@@ -19,4 +22,5 @@
     <%= f.text_area :text, placeholder: 'Type your article message in here...' %>
   </div>
   <%= f.submit "Submit post", disable_with: 'Submiting...' %>
+  </div>
 <% end %> 
