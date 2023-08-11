@@ -5,13 +5,14 @@
       <p><%= @post.text%></p>
       <div class="comments-likes">Comment <%= @post.comments_counter || 0 %>,  <span>Likes <%= @post.likes_counter || 0%></span>
       </div>
-    </div>
-   <div class="flex-col mx-8 my-4 border-4 md:w-84 d-flex border-indigo-500/100">
+  </div>
+    
+  <div class="flex-col p-5 mx-8 my-4 border-4 md:w-84 d-flex border-indigo-500/100">
     <% if @comments %>
       <% @comments.each do |comment| %>
       
     <h2><%= comment.author.name %>: <%= comment.text %></h2>
-     </div>
+  </div>
   <% end %>
 
 <% end %>
