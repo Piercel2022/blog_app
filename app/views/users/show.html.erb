@@ -19,5 +19,5 @@ Bio
           </div>
     <%end %>
     <%= link_to "Add New Post", "/users/#{@user.id}/posts/new", {:class => "bg-blue-600 text-white m-6 p-3 rounded-full font-bold"} %>
-    <button><%=link_to "See all posts", user_posts_path(@user) %></button>
+    <button class="p-3 m-6 font-bold text-white bg-blue-600 rounded-full"><%=link_to "See all posts", user_posts_path(@user) %></button>
     </div>
