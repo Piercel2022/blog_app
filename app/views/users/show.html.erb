@@ -18,6 +18,6 @@ Bio
             </div>
           </div>
     <%end %>
-    <%= link_to "Add New Post", "/users/#{@user.id}/posts/new", {:class => "see_all_post"}%>
-<button><%=link_to "See all posts", user_posts_path(@user) %></button>
+    <%= link_to "Add New Post", "/users/#{@user.id}/posts/new", {:class => "see_all_post"} %>
+    <button><%=link_to "See all posts", user_posts_path(@user) %></button>
     </div>
