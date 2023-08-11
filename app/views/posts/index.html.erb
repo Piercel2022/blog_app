@@ -1,12 +1,18 @@
-<p>Display the list of all posts</p>
+<div class="justify-center p-4 text-3xl font-bold text-white d-flex bg-slate-500">Display the list of all posts</div>
+
 <%= render partial:'partials/user_partial', locals: {user: @user}%>
+<div  class="flex-col mx-8 my-4 border-4 md:w-84 d-flex border-indigo-500/100">
 <% @user_posts.each do |post| %>
+
 <%= render partial:'partials/post_partial', locals: {post: post}%>
+</div>
 <button> <%=link_to "See Post", "posts/#{post.id}" %> </button>
 <ul>
 <% post.recent_comments.each do |comment|%>
 <li> <%= comment.author.name%>: <%= comment.text%></li>
 <% end %>
 </ul>
+
 <% end %>
+
 <%= link_to "Add new post", new_user_post_path(@user), class: " see-all-btn" %>
