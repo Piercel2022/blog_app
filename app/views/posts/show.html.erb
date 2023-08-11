@@ -19,7 +19,7 @@
  
 </div>
 
-<div class="p-3 m-6 font-bold text-white bg-blue-600 rounded-full w-25">
+<div class="w-20 p-3 m-6 font-bold text-white bg-blue-600 rounded-full">
 <%= form_for @like, url:likes_path do |f|%>
   <%= f.hidden_field :author_id, value: @post.author.id %>
   <%= f.hidden_field :post_id, value: @post.id %>
