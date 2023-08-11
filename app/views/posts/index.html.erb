@@ -6,7 +6,7 @@
 
 <%= render partial:'partials/post_partial', locals: {post: post}%>
 </div>
-<button> <%=link_to "See Post", "posts/#{post.id}" %> </button>
+<button class="w-40 p-3 font-bold text-white bg-blue-600 rounded-full"> <%=link_to "See Post", "posts/#{post.id}" %> </button>
 <ul>
 <% post.recent_comments.each do |comment|%>
 <li> <%= comment.author.name%>: <%= comment.text%></li>
