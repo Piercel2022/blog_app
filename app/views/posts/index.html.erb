@@ -3,10 +3,9 @@
 
 <%= render partial:'partials/user_partial', locals: {user: @user}%>
 
-<div  class="flex-col mx-8 my-4 border-4 md:w-84 d-flex border-indigo-500/100">
 <% @user_posts.each do |post| %>
 <%= render partial:'partials/post_partial', locals: {post: post}%>
-</div>
+
 
 <button class="w-40 p-3 ml-5 font-bold text-white bg-blue-600 rounded-full"> <%=link_to "See Post", "posts/#{post.id}" %> </button>
 <ul class="flex-col mx-8 my-4 border-4 md:w-84 d-flex border-indigo-500/100">
