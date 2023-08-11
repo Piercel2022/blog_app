@@ -19,11 +19,14 @@
  
 </div>
 
+<div class="p-3 m-6 font-bold text-white bg-blue-600 rounded-full w-25">
 <%= form_for @like, url:likes_path do |f|%>
   <%= f.hidden_field :author_id, value: @post.author.id %>
   <%= f.hidden_field :post_id, value: @post.id %>
   <%= f.submit "Like", disable_with: 'updating likes...' %>
 <% end %>
+</div>
+
 
 <h4>Add comment</h4>
 <%= form_for @comment, url:comment_post_path do |f| %>
