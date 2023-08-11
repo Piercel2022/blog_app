@@ -1,11 +1,11 @@
-<p>Display a specific user</p>
+<div class="justify-center font-bold text-white d-flex bg-slate-500">Display a specific user</div>
 <%= render partial: 'partials/user_partial', locals: { user: @user } %>
 
 <div >
 Bio
-<p>
+<div>
 <%= @user.bio%>
-</p>
+</div>
 
    <div>
     <% @user.posts.each do |e| %>
