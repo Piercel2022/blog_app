@@ -7,9 +7,9 @@ Bio
 <%= @user.bio%>
 </div>
 
-   <div>
+   <div class="">
     <% @user.posts.each do |e| %>
-        <div class="posts">
+        <div class="flex-col m-4 border-4 md:w-full d-flex border-indigo-500/100">
             <h1>Post: <%= e.title %></h1>
             <p><%= e.text %></p>
             <div>
