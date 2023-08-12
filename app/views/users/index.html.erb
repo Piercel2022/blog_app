@@ -1,4 +1,4 @@
-<div class="justify-center font-bold text-white d-flex bg-slate-500">Display the list of all users</div>
+<div class="justify-center font-bold p-3 text-white d-flex bg-slate-500">Display the list of all users</div>
 <% @users.each do |user| %>
 <%= render partial: 'partials/user_partial', locals: { user: user } %>
 <% end %>
