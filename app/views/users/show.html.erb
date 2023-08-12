@@ -9,7 +9,7 @@ Bio
 
    <div class="">
     <% @user.posts.each do |e| %>
-        <div class="flex-col mx-8 my-4 border-4 md:w-84 d-flex border-indigo-500/100">
+        <div class="flex-col mx-8 p-3 my-4 border-4 md:w-84 d-flex border-indigo-500/100">
             <h1>Post: <%= e.title %></h1>
             <p><%= e.text %></p>
             <div>
