@@ -15,11 +15,13 @@
   <div class="container-fluid  p-3 w-75 d-flex justify-content-center">(leave blank if you don't want to change it)</div>
   <div class="container-fluid p-3 w-75 d-flex justify-content-center">
 
-    <%= f.label :password %><br  />
+   <div class=" font-bold ml-5 p-3 d-flex justify-content-center">
+    <%= f.label :password %>
+    </div><br  />
     <%= f.password_field :password, autocomplete: "new-password" %>
-    <% if @minimum_password_length %>
+    <% if @minimum_password_length %><br  />
+    <em><%= @minimum_password_length %> characters minimum</em>
       <br />
-      <em><%= @minimum_password_length %> characters minimum</em>
     <% end %>
   </div>
   <div class="container-fluid p-3 w-75 d-flex justify-content-center">
