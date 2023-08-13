@@ -1,13 +1,13 @@
-<h2 class="container-fluid d-flex justify-content-center">Forgot your password?</h2>
+
 
 <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
-  <div class="container-fluid d-flex justify-content-center mb-3">
+  <div class="p-3 m-3 container-fluid d-flex justify-content-center">
     <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder:"Email" %>
   </div>
 
-  <div class="container-fluid d-flex justify-content-center">
+  <div class="container font-bold text-white bg-blue-500 border-solid h-9 d-flex justify-content-center w-80 shadow-indigo-500/50">
     <%= f.submit "Send me reset password instructions" %>
   </div>
 <% end %>
