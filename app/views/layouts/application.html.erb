@@ -10,7 +10,7 @@
   </head>
 
   <body>
-  <div class="justify-end container-fluid d-flex">
+  <div class="justify-end whitespace-normal container-fluid d-flex">
 <% if user_signed_in? %>
   Logged in as <strong class="whitespace-normal"><%= current_user.email %></strong>.
   <%= link_to 'Edit profile', edit_user_registration_path, :class => 'd-flex  justify-center font-bold text-white bg-blue-500' %> |
