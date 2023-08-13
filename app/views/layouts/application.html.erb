@@ -10,14 +10,14 @@
   </head>
 
   <body>
-  <div class="justify-end container-fluid d-flex">
+  <div class="justify-end whitespace-normal container-fluid d-flex">
 <% if user_signed_in? %>
-  Logged in as <strong><%= current_user.email %></strong>.
+  Logged in as <strong class="whitespace-normal"><%= current_user.email %></strong>.
   <%= link_to 'Edit profile', edit_user_registration_path, :class => 'd-flex  justify-center font-bold text-white bg-blue-500' %> |
  <%= button_to "Sign Out", destroy_user_session_path, method: :delete %>
 <% else %>
-  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+  <%= link_to "Sign up", new_user_registration_path, :class => 'd-flex mt-2 p-2 justify-center font-bold text-white bg-blue-500'  %> |
+  <%= link_to "Login", new_user_session_path, :class => 'd-flex  justify-center mt-2 p-2 font-bold text-white bg-blue-500'  %>
 <% end %>
 </div>
 
