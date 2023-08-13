@@ -1,23 +1,23 @@
 <div class="justify-center p-4 text-3xl font-bold text-white d-flex bg-slate-500">Display a specific post of a specific user</div>
-<div class="user_container">
- <div class="flex-col mx-8 my-4 border-4 md:w-84 d-flex border-indigo-500/100">
+
+ <div class="flex-col p-4 mx-8 my-4 border-4 md:w-84 d-flex border-indigo-500/100">
       <h2> Post #<%= @post.id %> by <span><%= @post.author.name %></span></h2>
       <p><%= @post.text%></p>
       <div class="comments-likes">Comment <%= @post.comments_counter || 0 %>,  <span>Likes <%= @post.likes_counter || 0%></span>
       </div>
   </div>
     
-  <div class="flex-col p-5 mx-8 my-4 border-4 md:w-84 d-flex border-indigo-500/100">
+
     <% if @comments %>
       <% @comments.each do |comment| %>
       
     <h2><%= comment.author.name %>: <%= comment.text %></h2>
-  </div>
+  
   <% end %>
 
 <% end %>
  
-</div>
+
 
 <div class="w-20 p-3 m-6 font-bold text-white bg-blue-600 rounded-full">
 <%= form_for @like, url:likes_path do |f|%>
@@ -33,7 +33,7 @@
    <div class="mt-4 ml-6 text-3xl text-bold text-slate-500">
   <%= f.text_area :text, placeholder:'Add your Comment' %><br />
   </div>
-  <div class="w-40 p-3 ml-6 font-bold text-white bg-blue-600 rounded-full">
+  <div class="justify-center w-40 p-4 ml-6 font-bold text-white bg-blue-600 rounded-full d-flex">
   <%= f.submit "Submit" %>
   </div>
 <% end %>
