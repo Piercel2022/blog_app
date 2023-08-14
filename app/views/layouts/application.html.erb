@@ -9,7 +9,7 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
   </head>
 
-  <body class="d-flex">
+  <body class="justify-center d-flex">
   <div class="justify-center whitespace-normal container-fluid d-flex">
 <% if user_signed_in? %>
   Logged in as <strong class="whitespace-normal"><%= current_user.email %></strong>.
