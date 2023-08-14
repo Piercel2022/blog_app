@@ -9,8 +9,8 @@ Bio
 
    <div class="">
     <% @user.posts.each do |e| %>
-        <div class="flex-col mx-8 p-3 my-4 border-4 md:w-84 d-flex border-indigo-500/100">
-            <h1>Post: <%= e.title %></h1>
+        <div class="flex-col p-3 mx-8 my-4 border-4 md:w-84 d-flex border-indigo-500/100">
+            Post #<%= e.title %>
             <p><%= e.text %></p>
             <div>
             <span>Comments:<%= e.comments_counter || 0%></span>
@@ -20,4 +20,4 @@ Bio
     <%end %>
     <%= link_to "Add New Post", "/users/#{@user.id}/posts/new", {:class => "bg-blue-600 text-white m-6 p-3 rounded-full font-bold"} %>
     <button class="p-3 m-6 font-bold text-white bg-blue-600 rounded-full"><%=link_to "See all posts", user_posts_path(@user) %></button>
-    </div>
+  </div>
