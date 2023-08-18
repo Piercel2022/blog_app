@@ -9,7 +9,7 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
   </head>
 
-  <body class="justify-center border-8 border-blue-900 d-flex mx-96">
+  <body class="justify-center border-8 d-flex mx-96">
   <div class="justify-center whitespace-normal container-fluid d-flex">
 <% if user_signed_in? %>
   Logged in as <strong class="whitespace-normal"><%= current_user.email %></strong>.
