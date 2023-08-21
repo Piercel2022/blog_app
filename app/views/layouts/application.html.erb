@@ -13,7 +13,7 @@
   <div class="justify-center whitespace-normal container-fluid d-flex">
 <% if user_signed_in? %>
   Logged in as <strong class="whitespace-normal"><%= current_user.email %></strong>.
-  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'd-flex  justify-center font-bold text-white bg-blue-500' %> |
+  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'd-flex  justify-center font-bold text-white bg-blue-600' %> |
  <%= button_to "Sign Out", destroy_user_session_path, method: :delete %>
 <% else %>
   <%= link_to "Sign up", new_user_registration_path, :class => 'd-flex mt-5 ml-4 p-2 justify-center font-bold text-white bg-blue-500'  %> |
